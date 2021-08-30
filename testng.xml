@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="COM API TEST PRODUCTION">
+    <listeners>
+        <listener class-name="Listeners.ExtentReport"/>
+        <listener class-name="Listeners.RetryListener"/>
+    </listeners>
+
+    <test name="Add Education" verbose="10">
+        <classes>
+            <class name="AddEducation"/>
+        </classes>
+    </test>
+
+    <test name="Add Liability Insurance" verbose="10">
+        <classes>
+            <class name="AddLiabilityInsurance"/>
+        </classes>
+    </test>
+
+    <test name="Add Provider" verbose="10">
+        <classes>
+            <class name="AddProvider"/>
+        </classes>
+    </test>
+
+    <test name="Add Training" verbose="10">
+        <classes>
+            <class name="AddTraining"/>
+        </classes>
+    </test>
+
+    <test name="Login" verbose="10">
+        <classes>
+            <class name="Login"/>
+        </classes>
+    </test>
+
+</suite>
